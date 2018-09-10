@@ -6,27 +6,40 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.ihaveu.iuzuan.framelibrary.BaseSkinActivity;
+import com.zbk.baselibrary.base.BaseActivity;
 import com.zbk.baselibrary.ioc.OnClick;
 import com.zbk.baselibrary.ioc.ViewById;
 import com.zbk.baselibrary.ioc.ViewUtils;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseSkinActivity {
 
-    @ViewById(R.id.test_tv)
-    private TextView mTestTv;
+
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void initData() {
+
+    }
+
+    @Override
+    protected void initTitle() {
+
+
+    }
+
+    @Override
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void setContentView() {
+        //设置页面
         setContentView(R.layout.activity_main);
 
-        ViewUtils.inject(this);
 
-        mTestTv.setText("IOC");
     }
 
-    @OnClick(R.id.test_tv)
-    protected void onClick(View view){
-        Log.d("jw","sss");
-    }
+
 }
