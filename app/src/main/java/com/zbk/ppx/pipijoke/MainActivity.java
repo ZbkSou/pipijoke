@@ -7,10 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.ihaveu.iuzuan.framelibrary.BaseSkinActivity;
-import com.zbk.baselibrary.base.BaseActivity;
-import com.zbk.baselibrary.ioc.OnClick;
-import com.zbk.baselibrary.ioc.ViewById;
-import com.zbk.baselibrary.ioc.ViewUtils;
+
 
 public class MainActivity extends BaseSkinActivity {
 
@@ -37,6 +34,7 @@ public class MainActivity extends BaseSkinActivity {
     protected void setContentView() {
         //设置页面
         setContentView(R.layout.activity_main);
+        int i = 2/0;
 
 
     }
