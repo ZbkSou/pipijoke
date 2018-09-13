@@ -11,9 +11,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.zbk.ppx.pipijoke.MainActivity">
 
-    <TextView
-        android:id="@+id/test_tv"
+    <Button
+        android:id="@+id/test_but"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="test"/>
 </RelativeLayout>
